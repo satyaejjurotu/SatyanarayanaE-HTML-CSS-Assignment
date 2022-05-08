@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="Slot.css">
+    <title>Slot Booking Form</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>Slot Booking Form</h1>
+            <p>Read below instructions before proceeding:<br> Make sure you fill all the fileds where * is provided</p>
+        </header>
+        <article>
+            <div class="slotbooking-container"></div>
+            <div class="slotimage">
+                <img src="Images/Lab-Test/lab-test.jpg" alt="GL News">
+            </div>
+            </div>
+        </article>
+        <form action="">
+            <article>
+                <h2>1. Your Contact Details</h2>
+                <table class="ContactDetails">
+
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Patient Id if exists</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" title="name" required spellcheck="true"></td>
+                        <td><input type="number" min="0000000000" max="9999999999" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>Contact Number</td>
+                        <td>Email Id</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" title="name" required spellcheck="true"></td>
+                        <td> <input type="text" title="name" required text="@"></td>
+                    </tr>
+
+                </table>
+            </article>
+
+            <article>
+                <h2>2. Address</h2>
+                <table class="ContactDetails">
+
+                    <tr>
+                        <td>H:No</td>
+                        <td>Street</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" title="name" required></td>
+                        <td> <input type="text" title="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Area</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" title="name" required></td>
+                    </tr>
+
+                </table>
+
+                <h3>District</h3>
+                <select name="District" id="district" required>
+                    <option value="">Choose</option>
+                    <option value="Bangalore Urban">Bangalore Urban</option>
+                    <option value="Bangalore Rural">Bangalore Rural</option>
+                    <option value="Ramnagar">Ramnagar</option>
+                </select>
+            </article>
+
+            <article>
+                <h2>3. Do you want a hard copy of the report also?</h2>
+                <input type="radio" id="c5" name="option" value="True" required>
+                <label for="c5">Yes</label>
+                <br>
+                <input type="radio" id="c6" name="option" value="False">
+                <label for="c6">No</label>
+            </article>
+
+            <article>
+                <h2>4. Select Your Comfortable Date and Time</h2>
+                <p>
+                    <label for="Date">Date:</label>
+                    <input type="date" id="Date" name="Date">
+                </p>
+
+                <p>
+                    <label for="Time">Time:</label>
+                    <input type="time" id="Time" name="Time">
+                </p>
+            </article>
+
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+
+        <footer>
+            <p>
+                This form is developed by GL Team. <br> Only Learners of Great Learning can use this form
+            </p>
+        </footer>
+
+    </section>
+</body>
+
+</html>

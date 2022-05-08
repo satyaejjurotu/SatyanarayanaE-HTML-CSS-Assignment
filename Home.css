@@ -1,0 +1,238 @@
+body {
+    background-color: honeydew;
+    margin: 0;
+}
+
+header {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    text-align: right;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.heading h1 {
+    margin: 0;
+}
+
+.navigate {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    margin: 0%;
+    padding: 0;
+    background-color: #777;
+    z-index: 10;
+}
+
+.menu {
+    margin: 0%;
+    padding: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+/*
+navigate{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}*/
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+
+.sub-menu-group-container {
+    position: relative;
+}
+
+.sub-menu-group {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sub-menu-group-container:hover .sub-menu-group {
+    display: block;
+}
+
+.sub-menu-group>li a {
+    display: inline-block;
+    width: 120px;
+    padding: 0.5em;
+    margin: 0;
+    color: rgb(0, 47, 255);
+}
+
+.sub-menu-group>li:hover a {
+    background-color: black;
+    color: white;
+}
+
+.Product-container {
+    padding-top: 36%;
+}
+
+
+#CovidCare,
+#DiabetesCare {
+    margin: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+
+.Care {
+    position: relative;
+    border-radius: 10px;
+    margin: 5px;
+    width: 300px;
+    height: 260px;
+    border: 2px solid green;
+    display: inline-block;
+}
+
+.Care img {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.Care img:hover {
+    border-radius: 10px;
+    transform: scale(1.5);
+    /*width: 400px;
+    height: 250px;*/
+    z-index: 100;
+    opacity: 1;
+}
+
+.Cart {
+    position: absolute;
+    bottom: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: lightblue;
+    border-style: ridge;
+    width: 273px;
+    border-radius: 5px;
+    max-width: 273px;
+    transition: .5s ease;
+    opacity: 5;
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    color: orangered;
+    z-index: 0;
+}
+
+.Price {
+    position: absolute;
+    bottom: 16%;
+    background-color: white;
+    width: 280px;
+    border-radius: 5px;
+    max-width: 280px;
+    transition: .5s ease;
+    opacity: 5;
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    color: blue;
+    z-index: 0;
+}
+
+.Care:hover .overlay {
+    opacity: 1;
+}
+
+
+.image-container {
+
+    position: relative;
+    padding: 0.5em;
+}
+
+img {
+    width: 99%;
+    position: absolute;
+}
+
+.text-container {
+    padding-top: 1%;
+    padding: 5px;
+    text-align: justify;
+}
+
+
+.img-1 {
+    animation: rotate-items 3s infinite;
+}
+
+.img-2 {
+    animation: rotate-items 3s infinite;
+    animation-delay: 1s;
+}
+
+.img-3 {
+    animation: rotate-items 3s infinite;
+    animation-delay: 2s;
+}
+
+.img-4 {
+    animation: rotate-items 3s infinite;
+    animation-delay: 1s;
+}
+
+.img-5 {
+    animation: rotate-items 3s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes rotate-items {
+    0% {
+        z-index: 1;
+    }
+
+    20% {
+        z-index: 2;
+    }
+
+    40% {
+        z-index: 3;
+    }
+
+    60% {
+        z-index: 4;
+    }
+
+    80% {
+        z-index: 5;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    bottom: 0%;
+    text-align: center;
+}
